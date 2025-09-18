@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamás Smith - UX/UI Designer & Frontend Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vertical Sidebar Navigation - Resume Page -->
+    <nav class="sidebar-nav">
+        <div class="nav-container">
+            <div class="nav-item">
+                <a href="index.html" class="nav-link" title="Home">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="resume1.html" class="nav-link" title="ahmed Johnson CV">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="resume2.html" class="nav-link active" title="tamás Smith CV">
+                    <i class="fas fa-user-tie"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#tamás-profile" onclick="scrollToSection('tamás-profile')" class="nav-link" title="Profile">
+                    <i class="fas fa-id-card"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#tamás-experience" onclick="scrollToSection('tamás-experience')" class="nav-link" title="Experience">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#tamás-contact" onclick="scrollToSection('tamás-contact')" class="nav-link" title="Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </nav>    <!-- tamás Smith's Resume -->
+    <div id="tamás-cv" class="page resume-page active" style="display: block;">
+        <!-- Resume Navigation -->
+        <!-- <div class="resume-navbar">
+            <div class="container">
+                <ul class="resume-nav">
+                    <li><a href="#tamás-profile" onclick="scrollToSection('tamás-profile')">Profile</a></li>
+                    <li><a href="#tamás-experience" onclick="scrollToSection('tamás-experience')">Experience</a></li>
+                    <li><a href="#tamás-contact" onclick="scrollToSection('tamás-contact')">Contact</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- Profile Section -->
+        <section id="tamás-profile" class="profile-section">
+            <div class="container">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="tamás Smith" class="profile-img">
+                <h1>tamás Smith</h1>
+                <h3>UX/UI Designer & Frontend Developer</h3>
+                <p class="lead">Creating beautiful and intuitive user experiences through thoughtful design and clean code.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="tamás-experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience & Skills</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="experience-card">
+                            <h4>Lead UX/UI Designer</h4>
+                            <h5 class="text-muted">DesignStudio Pro (2020 - Present)</h5>
+                            <p>Leading design initiatives for major clients. Created design systems and improved user engagement by 60% through data-driven design decisions.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h4>Frontend Developer & Designer</h4>
+                            <h5 class="text-muted">Creative Agency (2018 - 2020)</h5>
+                            <p>Designed and developed responsive websites for various clients. Collaborated with marketing teams to create compelling digital experiences.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h4>Junior Designer</h4>
+                            <h5 class="text-muted">Freelance (2016 - 2018)</h5>
+                            <p>Provided design services for small businesses and startups. Created brand identities and marketing materials.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="mb-4">Design & Dev Skills</h4>
+                        <div class="skills-container">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Sass</span>
+                            <span class="skill-tag">Tailwind</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="tamás-contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact tamás</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h4>Email</h4>
+                            <p>tamás.johnson@email.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/tamásjohnson</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card">
+                            <i class="fab fa-github contact-icon"></i>
+                            <h4>GitHub</h4>
+                            <p>github.com/tamásjohnson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Go back to home page (index.html)
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const navbar = document.querySelector('.resume-navbar');
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95))';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
