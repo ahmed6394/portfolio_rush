@@ -257,14 +257,14 @@
         }
 
         .btn-primary-custom {
-            background: white;
-            color: var(--primary-color);
-        }
-
-        .btn-primary-custom:hover {
             background: transparent;
             color: white;
             border-color: white;
+        }
+
+        .btn-primary-custom:hover {
+            background: white;
+            color: var(--primary-color);
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
