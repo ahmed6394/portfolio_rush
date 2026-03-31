@@ -372,15 +372,15 @@
             position: relative;
         }
 
-        .section-title::after {
+        /* .section-title::after {
             content: '';
-            width: 200px;
+            width: 350px;
             height: 5px;
             background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
             display: block;
             margin: 20px auto;
             border-radius: 2px;
-        }
+        } */
 
         .experience-card {
             background: white;
@@ -854,18 +854,6 @@
             margin-bottom: 40px;
             position: relative;
             padding-bottom: 20px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-            border-radius: 2px;
         }
 
         /* Responsive adjustments */
