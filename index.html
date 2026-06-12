@@ -33,6 +33,11 @@
                 </a>
             </div>
             <div class="nav-item">
+                <a href="#ahmed-certificates" onclick="scrollToSection('ahmed-certificates')" class="nav-link" title="Certificates">
+                    <i class="fas fa-certificate"></i>
+                </a>
+            </div>
+            <div class="nav-item">
                 <a href="#ahmed-contact" onclick="scrollToSection('ahmed-contact')" class="nav-link" title="Contact">
                     <i class="fas fa-envelope"></i>
                 </a>
@@ -46,10 +51,10 @@
         <!-- Profile Section -->
         <section id="ahmed-profile" class="profile-section">
             <div class="container">
-                <img src="./src/img/ahmed.png" alt="" class="profile-img">
+                <img src="./src/img/ahmed.png" alt="Mahabub Ahmed" class="profile-img">
                 <h1>Mahabub Ahmed</h1>
-                <h3>Software Engineer</h3>
-                <p class="lead">Building scalable microservices, orchestrating CI/CD pipelines, and deploying intelligent AI systems across cloud infrastructure.</p>
+                <h3>Cloud & DevOps Engineer</h3>
+                <p class="lead">Building cloud-native infrastructure with Kubernetes, AWS, Terraform, and CI/CD automation.</p>
             </div>
         </section>
 
@@ -65,12 +70,75 @@ Passionate about automation, infrastructure as code, and improving system reliab
             </div>
         </section>
 
+        <!-- Skills Section -->
+        <section class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-cloud"></i> Cloud</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-cubes"></i> Containers</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Helm</span>
+                            <span class="skill-tag">EKS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-sitemap"></i> Infrastructure as Code</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Ansible</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-sync-alt"></i> CI/CD</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Argo CD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Programming Languages and Frameworks</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-chart-line"></i> Monitoring</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Portfolio Section with Tabs -->
         <section id="ahmed-portfolio" class="section portfolio-section">
             <div class="container">
                 <h2 class="section-title">Portfolio & Projects</h2>
-                
-                <!-- Tab Navigation -->
+
                 <div class="portfolio-tabs">
                     <button class="tab-btn active" data-tab="devops">
                         <i class="fas fa-rocket"></i> DevOps
@@ -83,90 +151,151 @@ Passionate about automation, infrastructure as code, and improving system reliab
                     </button>
                 </div>
 
-                <!-- DevOps Tab Content -->
                 <div class="tab-content active" id="devops-content">
                     <div class="projects-grid">
-                        <!-- MERN Task App -->
+                        <div class="project-card devops-card">
+                            <div class="project-header">
+                                <h3>Kubernetes-Based Full-Stack Deployment Platform</h3>
+                                <span class="category-badge devops">DevOps</span>
+                            </div>
+                            <p class="project-subtitle">Angular • FastAPI • PostgreSQL • Kubernetes • Helm • Docker • GitHub Actions</p>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Kubernetes</span>
+                                    <span class="tech-tag">Helm</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">GitHub Actions</span>
+                                    <span class="tech-tag">Nginx</span>
+                                </div>
+                            </div>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a repeatable way to deploy a full-stack app with clean environment separation and low manifest duplication.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Built frontend and backend containers, pushed them through CI, and deployed to Kubernetes with Helm.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Helm improved reuse, and multi-stage builds kept the deployment lightweight and consistent.</p>
+                            </div>
+                            <a href="https://github.com/ahmed6394/todo-list" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+
+                        <div class="project-card devops-card">
+                            <div class="project-header">
+                                <h3>Secure Acquisitions REST API</h3>
+                                <span class="category-badge devops">DevOps</span>
+                            </div>
+                            <p class="project-subtitle">Node.js • PostgreSQL • Docker • GitHub Actions • JWT</p>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">GitHub Actions</span>
+                                    <span class="tech-tag">JWT</span>
+                                    <span class="tech-tag">RBAC</span>
+                                    <span class="tech-tag">Rate Limiting</span>
+                                </div>
+                            </div>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a secure backend with authentication, access control, and a reliable automated build workflow.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Ran CI tests, built the Docker image, pushed it through the pipeline, and deployed the API with validation checks.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Security middleware should be part of the base design, and release pipelines should validate both code and containers.</p>
+                            </div>
+                            <a href="https://github.com/ahmed6394/acquisitions" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+
                         <div class="project-card devops-card">
                             <div class="project-header">
                                 <h3>MERN Task App</h3>
                                 <span class="category-badge devops">DevOps</span>
                             </div>
                             <p class="project-subtitle">Full-Stack Task Management Platform</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Express</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Jenkins</span>
-                                <span class="tech-tag">AWS</span>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Jenkins</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">Docker Compose</span>
+                                </div>
                             </div>
-                            <p class="project-description">Built a complete task management application with a modern React frontend and scalable Express backend with MongoDB integration. Containerized the entire stack using Docker and Docker Compose for seamless multi-container orchestration. Implemented a Jenkins CI/CD pipeline to automate testing and deployment workflows.</p>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a containerized task app with a stable deployment flow across environments.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Built and linked frontend and backend containers with Docker Compose, then used Jenkins to automate testing and delivery.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Clear service boundaries make orchestration simpler, and automation improves deployment predictability.</p>
+                            </div>
                             <a href="https://github.com/ahmed6394/mern-devops" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
 
-                        <!-- Acquisitions API -->
-                        <div class="project-card devops-card">
-                            <div class="project-header">
-                                <h3>Acquisitions API</h3>
-                                <span class="category-badge devops">DevOps</span>
-                            </div>
-                            <p class="project-subtitle">Secure REST Backend</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Express</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Drizzle ORM</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">GitHub Actions</span>
-                            </div>
-                            <p class="project-description">Built a production-ready REST API with JWT authentication, role-based access control, rate limiting, and security middleware. Containerized the service and implemented CI/CD pipelines for automated testing and Docker builds, ensuring scalable and reliable deployments.</p>
-                            <a href="https://github.com/ahmed6394/acquisitions" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-
-                        <!-- Todo-list -->
-                        <div class="project-card devops-card">
-                            <div class="project-header">
-                                <h3>Todo List Platform</h3>
-                                <span class="category-badge devops">DevOps</span>
-                            </div>
-                            <p class="project-subtitle">Containerized Frontend Deployment</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Angular 14</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Nginx</span>
-                                <span class="tech-tag">Kubernetes (kubeadm + Calico)</span>
-                                <span class="tech-tag">Github Actions</span>
-                                <span class="tech-tag">AWS EC2</span>
-                            </div>
-                            <p class="project-description">Developed and deployed a production-style Angular Todo application with multi-stage Docker builds and Nginx serving, then orchestrated workloads on Kubernetes using namespace, Deployment, and Service manifests. Built a CI/CD pipeline that automates Docker image build/push and remote EC2 deployment, improving release speed, consistency, and reliability.</p>
-                            <a href="https://github.com/ahmed6394/todo-list" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-
-                        <!-- Go Ecommerce -->
                         <div class="project-card devops-card">
                             <div class="project-header">
                                 <h3>Go Ecommerce</h3>
                                 <span class="category-badge devops">DevOps</span>
                             </div>
                             <p class="project-subtitle">E-commerce Microservices Platform</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Go</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">REST API</span>
-                                <span class="tech-tag">JWT</span>
+                            <!-- <div class="project-section">
+                                <h4>Architecture Diagram</h4>
+                                <div class="project-diagram">
+                                    <img src="./src/img/project-architecture/go-ecommerce.png" alt="Architecture diagram for Go Ecommerce">
+                                </div>
+                            </div> -->
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Go</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">REST API</span>
+                                    <span class="tech-tag">JWT</span>
+                                    <span class="tech-tag">Microservices</span>
+                                </div>
                             </div>
-                            <p class="project-description">Built a production-ready microservices system using Go with DDD principles. Implemented secure JWT authentication and optimized SQL queries. Fully containerized for reproducible deployments and improved reliability.</p>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a production-ready backend with secure authentication and clear service boundaries.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Built the Go services, connected PostgreSQL, containerized the stack, and used Docker for repeatable deployment.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Smaller service boundaries improve maintainability, and containers make release behavior more predictable.</p>
+                            </div>
                             <a href="https://github.com/ahmed6394/go-eco" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
@@ -174,41 +303,78 @@ Passionate about automation, infrastructure as code, and improving system reliab
                     </div>
                 </div>
 
-                <!-- AI Tab Content -->
                 <div class="tab-content" id="ai-content">
                     <div class="projects-grid">
-                        <!-- AI Agent System -->
                         <div class="project-card ai-card">
                             <div class="project-header">
                                 <h3>AI Agent System</h3>
                                 <span class="category-badge ai">AI</span>
                             </div>
-                            <p class="project-subtitle">Multi-Tool Orchestration</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">LangGraph</span>
-                                <span class="tech-tag">Chainlit</span>
+                            <p class="project-subtitle">Multi-Tool Orchestration Platform</p>
+                            <div class="project-section">
+                                <h4>Architecture Diagram</h4>
+                                <div class="project-diagram">
+                                    <img src="./src/img/project-architecture/ai-agent-system.png" alt="Architecture diagram for AI Agent System">
+                                </div>
                             </div>
-                            <p class="project-description">Developed a robust agentic AI system with deterministic state transitions and multi-tool decision routing. Integrated memory, tool execution reliability, and Chainlit UI for interactive debugging and improved workflow transparency.</p>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">LangGraph</span>
+                                    <span class="tech-tag">Chainlit</span>
+                                </div>
+                            </div>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a controlled agent workflow with reliable tool routing and decision visibility.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Built the orchestration in Python, connected tools with LangGraph, and used Chainlit for debugging.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Deterministic routing improves reliability, and observability makes agent workflows easier to maintain.</p>
+                            </div>
                             <a href="https://github.com/ahmed6394/fault_routing_agent" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
 
-                        <!-- Voice Order App -->
                         <div class="project-card ai-card">
                             <div class="project-header">
                                 <h3>Voice Order App</h3>
                                 <span class="category-badge ai">AI</span>
                             </div>
-                            <p class="project-subtitle">STT Order Intelligence Platform</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Hugging Face Whisper</span>
-                                <span class="tech-tag">OpenAI API</span>
-                                <span class="tech-tag">Gradio</span>
+                            <p class="project-subtitle">Speech-to-Order Intelligence Platform</p>
+                            <div class="project-section">
+                                <h4>Architecture Diagram</h4>
+                                <div class="project-diagram">
+                                    <img src="./src/img/project-architecture/voice-order-app.png" alt="Architecture diagram for Voice Order App">
+                                </div>
                             </div>
-                            <p class="project-description">Built a product-focused voice ordering system for industrial operations that converts speech to structured order JSON using STT + LLM orchestration. Implemented product-code mishearing correction, intent classification, entity extraction, and ambiguity handling with auto-generated follow-up prompts.</p>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Whisper</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">Gradio</span>
+                                </div>
+                            </div>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed a voice workflow that could turn speech into structured orders while handling ambiguity.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Built speech-to-text, added entity extraction, and used follow-up prompts to resolve uncertain inputs.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">Correction logic improves accuracy, and structured prompts reduce parsing errors downstream.</p>
+                            </div>
                             <a href="https://github.com/ahmed6394/STT-project" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
@@ -216,89 +382,46 @@ Passionate about automation, infrastructure as code, and improving system reliab
                     </div>
                 </div>
 
-                <!-- MLOps Tab Content -->
                 <div class="tab-content" id="mlops-content">
                     <div class="projects-grid">
-                        <!-- Spotify Prediction -->
                         <div class="project-card mlops-card">
                             <div class="project-header">
                                 <h3>Spotify Prediction</h3>
                                 <span class="category-badge mlops">MLOps</span>
                             </div>
                             <p class="project-subtitle">End-to-End MLOps Pipeline</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Dagster</span>
-                                <span class="tech-tag">MLflow</span>
-                                <span class="tech-tag">XGBoost</span>
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">Streamlit</span>
-                                <span class="tech-tag">Docker</span>
+                            <div class="project-section">
+                                <h4>Architecture Diagram</h4>
+                                <div class="project-diagram">
+                                    <img src="./src/img/project-architecture/spotify-prediction.png" alt="Architecture diagram for Spotify Prediction">
+                                </div>
                             </div>
-                            <p class="project-description">Designed a full MLOps pipeline with orchestrated data ingestion, training, and evaluation using Dagster. Automated experiment tracking with MLflow and deployed a FastAPI inference service. Built a Streamlit dashboard enabling non-technical users to run predictions and analyze features.</p>
+                            <div class="project-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Dagster</span>
+                                    <span class="tech-tag">MLflow</span>
+                                    <span class="tech-tag">XGBoost</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Streamlit</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                            </div>
+                            <div class="project-section">
+                                <h4>Problem</h4>
+                                <p class="project-description">Needed an automated ML workflow for training, tracking, and serving predictions.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Deployment Flow</h4>
+                                <p class="project-description">Orchestrated training and evaluation with Dagster, tracked runs with MLflow, and served predictions through FastAPI and Streamlit.</p>
+                            </div>
+                            <div class="project-section">
+                                <h4>Lessons Learned</h4>
+                                <p class="project-description">MLOps is more stable when orchestration, tracking, and serving are designed together.</p>
+                            </div>
                             <a href="https://github.com/ahmed6394//MLOps-Spotify" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section skills-section">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-rocket"></i> DevOps</h4>
-                        <div class="skill-items">
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">GitHub Actions</span>
-                            <span class="skill-tag">K8s</span>
-                            <span class="skill-tag">minikube</span>
-                            <span class="skill-tag">KinD</span>
-                            <span class="skill-tag">kubeadm</span>
-                            <span class="skill-tag">Calico</span>
-                            <span class="skill-tag">EKS</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Bash</span>
-                            <span class="skill-tag">Nginx</span>
-                            <span class="skill-tag">Jenkins</span>
-                            <span class="skill-tag">AWS</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-code"></i> Backend</h4>
-                        <div class="skill-items">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Express</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">Go</span>
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">JWT</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-database"></i> Databases</h4>
-                        <div class="skill-items">
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">SQLite3</span>
-                            <span class="skill-tag">Drizzle ORM</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-brain"></i> AI & MLOps</h4>
-                        <div class="skill-items">
-                            <span class="skill-tag">LangGraph</span>
-                            <span class="skill-tag">LangChain</span>
-                            <span class="skill-tag">Langfuse</span>
-                            <span class="skill-tag">MLflow</span>
-                            <span class="skill-tag">XGBoost</span>
-                            <span class="skill-tag">Dagster</span>
                         </div>
                     </div>
                 </div>
@@ -309,6 +432,17 @@ Passionate about automation, infrastructure as code, and improving system reliab
         <section id="ahmed-experience" class="section experience-section">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
+                <div class="experience-card">
+                    <h4>Software Engineering Intern</h4>
+                    <p class="text-muted">PixScrib (Gaming Platform Startup), Germany | Apr 2026 – Present</p>
+                    <ul>
+                        <li>Developed backend features and resolved issues for an online gaming platform.</li>
+                        <li>Implemented GitHub webhook integrations for automated development and deployment workflows.</li>
+                        <li>Contributed to Docker-based deployment workflows and GitHub Actions pipelines to improve release consistency.</li>
+                        <li>Supported monitoring, troubleshooting, and production support to improve service reliability.</li>
+                    </ul>
+                </div>
+
                 <div class="experience-card">
                     <h4>Assistant Engineer</h4>
                     <p class="text-muted">Vicar Electricals Ltd, Bangladesh | Mar 2018 – Jun 2021</p>
@@ -332,6 +466,35 @@ Passionate about automation, infrastructure as code, and improving system reliab
                 <div class="education-item">
                     <h4>B.Sc. in Electrical and Electronic Engineering</h4>
                     <p class="text-muted">AUST, Bangladesh | Dec 2017</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="ahmed-certificates" class="section certificates-section">
+            <div class="container">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/img/certificats/lvl3.png" alt="Certificate 1">
+                        </div>
+                        <div class="certificate-header">
+                            <h4>LEVEL3 - MLOps</h4>
+                            <span class="certificate-badge">2025</span>
+                        </div>
+                        <p class="certificate-issuer">LEVEL3</p>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/img/certificats/k8s-stackit.png" alt="Certificate 2">
+                        </div>
+                        <div class="certificate-header">
+                            <h4>STACKIT Kubernetes Fundamentals</h4>
+                            <span class="certificate-badge">2026</span>
+                        </div>
+                        <p class="certificate-issuer">STACKIT University</p>
+                    </div>
                 </div>
             </div>
         </section>
